@@ -96,7 +96,7 @@ vector3d &vector3d::operator/=(float num) {
 bool vector3d::operator==(const vector3d &vec2) {
   return (x == vec2.x && y == vec2.y && z == vec2.z);
 };
-bool vector3d::operator!=(const vector3d &vec2) { !(*this == vec2); };
+bool vector3d::operator!=(const vector3d &vec2) { return !(*this == vec2); };
 std::ostream &operator<<(std::ostream &out, const vector3d &vec) {
   out << vec.x << " " << vec.y << " " << vec.z << std::endl;
   return out;
